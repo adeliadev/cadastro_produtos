@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav >
+                <ul class="navbar">
+                    <li class="item-nav"><a href="#" id="home">Home</a></li>
+                    <li class="item-nav">
+                        <a href="#" id="titulo">
+                            Cadastro de produtos
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="./lista/lista.html" id="lista">
+                            Lista
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container__form">
+            <form action="post" id="form">
+                <label for="nome">Nome do produto:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria" required>
+
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" step="0.01" required>
+
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <input type="submit" value="Cadastrar" id="botao">
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+
+    </main>
+</body>
+
+</html>
